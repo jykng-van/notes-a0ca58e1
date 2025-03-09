@@ -10,7 +10,7 @@ The database has 2 collections just **users** and **notes** which respectively r
 
 ## The Framework, Environment and Dependencies
 
-This project is in Node (using JavaScript) with an Express server. It only covers the server part of the API, there's no separate frontend client UI to this. It uses ES6 modules with import statements and a bit of babel when necessary.
+This project is in Node (using JavaScript) with an Express server. It only covers the server part of the API, there's no separate frontend client UI included with this. It uses ES6 modules with import statements and a bit of babel when necessary.
 
 The project does use a *.env* file for settings this should contain **MONGODB_URI** which has the URI to the MongoDB and **JWT_SECRET** which is a private secret key used in the Authentication.
 
