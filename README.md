@@ -1,6 +1,13 @@
 # Notes API
 
-This is an API using node.js, express.js and MongoDB.
+This is an API using node.js, express.js and MongoDB. It can register users with a *name*, *email* and *password* and when authenticated with an access token set in the API request header in the format `Authorization: Bearer <Access Token>` they can do the following: 
+- Create a note with a *title*, *content* and *keywords*
+- Edit a note
+- View all notes they have access to
+- View an individual note they have access to
+- Search notes by a query that they have access to
+- Delete a note
+- Share their note with another user, who will then have access to view and list the note
 
 ## The Database
 
