@@ -16,7 +16,7 @@ connect();
 
 //setup and use rate limiter, which should only be for the running server and not testing
 const limiter = rateLimit({
-    max:5,
+    max:10,
     window:1000
 });
 app.use(limiter);

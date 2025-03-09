@@ -1,6 +1,6 @@
 # Notes API
 
-This is an API using node.js, express.js and MongoDB. It can register users with a *name*, *email* and *password* and when authenticated with an access token set in the API request header in the format `Authorization: Bearer <Access Token>` they can do the following: 
+This is an API using node.js, express.js and MongoDB. It can register users with a *name*, *email* and *password* and when authenticated with an access token set in the API request header in the format `Authorization: Bearer <Access Token>` they can do the following:
 - Create a note with a *title*, *content* and *keywords*
 - Edit a note
 - View all notes they have access to
@@ -25,9 +25,9 @@ For authentication it uses JWT tokens, it use the NPM module *jsonwebtoken* and 
 
 Other dependencies used are *cors* which probably wasn't necessary since this is only an API but useful later on for CORS headers.
 
-For rate limiting there's *express-rate-limit* for the rate limiting and request throttling requirement, it's set to 5 requests per second.
+For rate limiting there's *express-rate-limit* for the rate limiting and request throttling requirement, it's set to 10 requests per second.
 
-Finally for encrypting password in the DB there's *bcrypt* which was used to make hashes from the passwords. There's middleware with Mongoose where it encrypts new or modified passwords. 
+Finally for encrypting password in the DB there's *bcrypt* which was used to make hashes from the passwords. There's middleware with Mongoose where it encrypts new or modified passwords.
 
 For testing the *jest* and *supertest* where used to run tests, *jest* more exclusively for the unit tests on the services and *supertest* for testing the API endpoints.
 
