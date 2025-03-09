@@ -27,7 +27,9 @@ Other dependencies used are *cors* which probably wasn't necessary since this is
 
 For rate limiting there's *express-rate-limit* for the rate limiting and request throttling requirement, it's set to 5 requests per second.
 
-Finally for encrypting password in the DB there's *bcrypt* which was used to make hashes from the passwords. There's middleware with Mongoose where it encrypts new or modified passwords.
+Finally for encrypting password in the DB there's *bcrypt* which was used to make hashes from the passwords. There's middleware with Mongoose where it encrypts new or modified passwords. 
+
+For testing the *jest* and *supertest* where used to run tests, *jest* more exclusively for the unit tests on the services and *supertest* for testing the API endpoints.
 
 ## How to run it
 
